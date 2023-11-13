@@ -1,0 +1,41 @@
+@media (min-width: 640px) {
+ 
+  .header__left {
+    font-size: 2rem;
+  }
+  /* .hero {
+    padding: 0;
+  } */
+  .hero__title {
+    font-size: 4.5rem; /* 30px */
+  }
+  .problem__title {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+  .problem__img {
+    padding: 1.5rem;
+    display: flex;
+  }
+  .template__bottom {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .template__int__images img {
+    width: 50%;
+    padding: 0;
+  }
+  .template__int__images__relative img {
+    width: 100%;
+  }
+  .template__int__images__relative {
+    position: relative;
+    transform: none;
+    z-index: 0;
+  }
+  
+  .home__end__title {
+    font-size: 3rem; /* 48px */
+line-height: 1;
+  }
+}
