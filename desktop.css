@@ -1,5 +1,4 @@
 @media (min-width: 640px) {
- 
   .header__left {
     font-size: 2rem;
   }
@@ -13,10 +12,24 @@
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
   }
+
   .problem__img {
     padding: 1.5rem;
     display: flex;
+    text-align: center;
   }
+  .problem__img__title {
+    font-size: 18px;
+  }
+  .problem__img__desc{
+    gap: 12rem;
+  }
+  .problem__desc {
+    width: 38rem;
+    text-align: center;
+    word-wrap: wrap;
+  }
+
   .template__bottom {
     flex-direction: row;
     gap: 2rem;
@@ -33,9 +46,9 @@
     transform: none;
     z-index: 0;
   }
-  
+
   .home__end__title {
     font-size: 3rem; /* 48px */
-line-height: 1;
+    line-height: 1;
   }
 }

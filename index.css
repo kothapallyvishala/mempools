@@ -164,6 +164,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  object-fit: contain;
 }
 
 .problem__content {
@@ -171,6 +172,32 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.problem {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.backgroung_imgs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: radial-gradient(
+    49.99999572069872% 49.99999572069872% at 49.99999349098931%
+      49.99999729086944%,
+    #641a1a 0%,
+    rgba(35, 11, 43, 1) 52.48328447341919%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: -10;
+}
+
+.problem__main {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   width: 100%;
 }
@@ -205,29 +232,39 @@ section {
 }
 
 .problem__divider {
-  height: 2rem;
+  height: 2.5rem;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  align-self: center;
 }
 .problem__img {
-  display: none;
-  width: 70%;
+  /* display: none; */
+  position: relative;
+  width: 90%;
+  gap: 8px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(165, 58, 58, 0) 0%,
+    #000000 100%
+  );
 }
 .problem__img__title {
+  font-size: 12px;
   font-weight: 600;
   opacity: 0.8;
+  text-align: center;
 }
-.problem__img > img {
+.problem__content > img {
   width: 100%;
 }
 
 .problem__img__desc {
   display: flex;
   justify-content: space-between;
-  gap: 15rem;
+  
   padding: 5px;
 }
 
@@ -276,12 +313,24 @@ section {
   flex: 2;
 }
 .template__alt__images > img {
-  width: 56rem;
+  width: 100%;
+  object-fit: contain;
+  backdrop-filter: blur(10px);
 }
+.template__alt__images img:nth-child(1) {
+  height: 46px;
+}
+.template__alt__images img:nth-child(2) {
+  height: 46px;
+}
+.template__alt__images img:nth-child(3) {
+  height: 46px;
+}
+
 .template__alt__images {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
   width: 100%;
   background: radial-gradient(
     60.0000387406526% 100.00000595567178% at 49.99999957398405%
@@ -290,13 +339,17 @@ section {
     rgba(42, 21, 51, 1) 47.811463475227356%,
     rgba(0, 0, 0, 1) 100%
   );
+  overflow: hidden;
+  max-height: 26rem;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .template__int__images {
   position: relative;
   display: flex;
   gap: 2.5rem;
-  padding: 2rem 0;
+  margin: 2rem 0;
   z-index: -10;
   background: radial-gradient(
     50.00002980039999% 99.9999999961197% at 50.00000117056014%
@@ -305,6 +358,7 @@ section {
     rgba(26, 8, 11, 1) 51.76400542259216%,
     rgba(0, 0, 0, 1) 100%
   );
+  overflow: hidden;
 }
 
 .integration__title {
@@ -317,7 +371,7 @@ section {
 .template__int__images img {
   object-fit: contain;
   position: relative;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(20px);
   width: 80%;
 }
 
@@ -362,7 +416,7 @@ section {
 .template__api__images__relative-img {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-self: flex-start;
   background-color: #ffffff1f;
   backdrop-filter: blur(8px);
@@ -373,10 +427,15 @@ section {
   aspect-ratio: 16 / 11;
   overflow: hidden;
   height: auto, 287px;
+  padding: 0 15px;
+}
+
+.template__api__images__relative-img__inner img {
+  filter: brightness(1.2) saturate(2);
 }
 
 .template__api__images__absolute-img {
-  width: 40%;
+  width: 50%;
   aspect-ratio: 16 / 11;
   border-radius: 5px;
   /* height: auto, 236px; */

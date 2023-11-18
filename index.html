@@ -64,7 +64,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <h1 class="hero__title">
           Instant<br />
           Blockchain<br />
@@ -76,35 +76,66 @@
         </div>
       </section>
       <section class="problem">
-        <div class="problem__content">
-          <p>Problem Statement</p>
-          <h2 class="problem__title">On-Chain Alerting is Complex</h2>
-          <div class="problem__desc">
-            The blockchain space is expanding at a breakneck pace, resulting in
-            a complex landscape that can span multiple chains and involve
-            cross-chain interactions. This poses a significant challenge for
-            businesses and users seeking to make informed decisions.
-          </div>
-        </div>
-        <div class="problem__divider"></div>
-        <div class="problem__content">
-          <p class="problem__hero__title">Solution</p>
-          <h2 class="problem__title">Scenario Based Real-Time Alerting</h2>
-          <div class="problem__img">
-            <p class="problem__img__title">
-              Easily Subscribe to Event Scenarios
-            </p>
-            <img src="assets/section_img-1.png" alt="" />
-            <div class="problem__img__desc">
-              <p class="problem__img__title">User destinations</p>
-              <p class="problem__img__title">Cross chain triggers</p>
+        <div class="problem__main">
+          <div class="problem__content">
+            <p>Problem Statement</p>
+            <h2 class="problem__title">On-Chain Alerting is Complex</h2>
+            <div class="problem__desc">
+              The blockchain space is expanding at a breakneck pace, resulting
+              in a complex landscape that can span multiple chains and involve
+              cross-chain interactions. This poses a significant challenge for
+              businesses and users seeking to make informed decisions.
             </div>
           </div>
-          <div class="problem__desc">
-            Easily subscribe to smart contract events or blockchain accounts and
-            receive notifications in real-time. Create customized alert
-            scenarios that combine multiple cross-chain alerts, enabling you to
-            automate the decision making process and stay ahead.
+
+          <div class="problem__divider"></div>
+
+          <div class="problem__content">
+            <p class="problem__hero__title">Solution</p>
+            <h2 class="problem__title">Scenario Based Real-Time Alerting</h2>
+            <div class="problem__img">
+              <div class="backgroung_imgs">
+                <img
+                  class="backgroung_img"
+                  src="assets/backgroung-light-effect-2.webp"
+                  alt=""
+                />
+                <img
+                  class="backgroung_img"
+                  src="assets/backgroung-light-effect-2.webp"
+                  alt=""
+                />
+                <img
+                  class="backgroung_img"
+                  src="assets/backgroung-light-effect-2.webp"
+                  alt=""
+                />
+                <img
+                  class="backgroung_img"
+                  src="assets/backgroung-light-effect-2.webp"
+                  alt=""
+                />
+                <img
+                  class="backgroung_img"
+                  src="assets/backgroung-light-effect-2.webp"
+                  alt=""
+                />
+              </div>
+              <p class="problem__img__title">
+                Easily Subscribe to Event Scenarios
+              </p>
+              <img src="assets/section_img-1.png" alt="" />
+              <div class="problem__img__desc">
+                <p class="problem__img__title">User destinations</p>
+                <p class="problem__img__title">Cross chain triggers</p>
+              </div>
+            </div>
+            <div class="problem__desc">
+              Easily subscribe to smart contract events or blockchain accounts
+              and receive notifications in real-time. Create customized alert
+              scenarios that combine multiple cross-chain alerts, enabling you
+              to automate the decision making process and stay ahead.
+            </div>
           </div>
         </div>
       </section>
@@ -112,11 +143,31 @@
         <div class="template__top">
           <p class="problem__hero__title">Scenario Based Alerting</p>
           <h2 class="template__title">Event Watcher Service</h2>
-          <div class="template__alt__images">
-            <img src="assets/alerting-img4.webp" alt="" />
-            <img src="assets/alerting-img3.webp" alt="" />
-            <img src="assets/alerting-img2.webp" alt="" />
-            <img src="assets/alerting-img1.webp" alt="" />
+          <div id="event_imgs" class="template__alt__images">
+            <img
+              id="event_img"
+              class="alt alt_1"
+              src="assets/alerting-img4.webp"
+              alt=""
+            />
+            <img
+              id="event_img"
+              class="alt alt_2"
+              src="assets/alerting-img3.webp"
+              alt=""
+            />
+            <img
+              id="event_img"
+              class="alt alt_3"
+              src="assets/alerting-img2.webp"
+              alt=""
+            />
+            <img
+              id="event_img"
+              class="alt alt_4"
+              src="assets/alerting-img1.webp"
+              alt=""
+            />
           </div>
         </div>
         <div class="template__bottom">
@@ -138,9 +189,9 @@
           <p class="integration__title">Simple Integration Process</p>
           <h2 class="template__title">Use Preconfigured Alert Templates</h2>
           <div class="template__int__images">
-            <img src="assets/integration-img-1.webp" alt="" />
+            <img class="box_1" src="assets/integration-img-1.webp" alt="" />
             <div class="template__int__images__relative">
-              <img src="assets/integration-img2(1).png" alt="" />
+              <img class="box_2" src="assets/integration-img2(1).png" alt="" />
               <div class="shadow"></div>
             </div>
           </div>
@@ -165,7 +216,7 @@
             <div class="template__api__images__relative-img">
               <img src="assets/api-img0.webp" alt="" />
               <div class="template__api__images__relative-img__inner">
-                <img src="assets/api-img1.webp" alt="" />
+                <img class="code" src="assets/api-img1.webp" alt="" />
               </div>
             </div>
             <img
@@ -248,9 +299,14 @@
             </svg>
           </a>
         </footer>
-
       </section>
     </main>
     <div class="top__gradient"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
